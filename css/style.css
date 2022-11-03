@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../img/bg-bazblue.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Silkscreen', cursive;
+}
+
+header{
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    text-align: center;
+    margin: 2rem auto; 
+    
+    
+}
+
+.characterImg{
+    
+    text-align: center;
+    margin: 0 auto;
+    
+    
+
+}
+
+.characterImg img{  
+    margin-top: 1rem;
+    padding-top: 8rem;
+    
+    
+}
+
+.characterAll{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transition: all 2s;
+    
+}
+
+.character:hover{
+    scale: 1.2;
+    
+}
+
+.characterAll .character img{
+    border-radius: 90%;
+}
+section{
+    display: flex;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    font-size: 2rem;
+    
+}
+
+
+@media (max-width:1400px) {
+    .characterAll{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        transition: all 2s;
+        
+    }
+    .characterImg{
+        position: fixed;
+        top: 120px;
+        right:50px;
+        
+    }
+}
+
+@media (max-width:1000px) {
+    .characterAll{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        transition: all 2s;
+        
+    }
+    .characterImg{
+        position: fixed;
+        top: 120px;
+        right:50px;
+        
+    }
+}
+
+ 
